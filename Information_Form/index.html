@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Information Form</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <header>
+            <img src="logo.svg" id="logo" alt="Logo">
+            <h1 id="title">Information Form</h1>
+      </header>
+      <main>
+            <form action="/submit_form" class="information_form" method="post">
+                  <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="John" required>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Wick" required>
+                        <label for="emailAddress">Email Address:</label>
+                        <input type="email" name="emailAddress" id="emailAddress" placeholder="johnwick@gmail.com" required>
+                        <label for="age">Age:</label>
+                        <input type="number" name="age" id="age" min="0" placeholder="37" required>
+                  </fieldset>
+
+                  <fieldset>
+                        <legend>Gender</legend>
+                        <div class="gender_container">
+                              <div class="genders">
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="gender" id="male" value="male">
+                              </div>
+                              <div class="genders">
+                                    <label for="female">Female</label>
+                                    <input type="radio" name="gender" id="female" value="female">
+                              </div>
+                              <div class="genders">
+                                    <label for="alien">Alien</label>
+                                    <input type="radio" name="gender" id="alien" value="alien">
+                              </div>
+                        </div>
+                  </fieldset>
+
+                  <fieldset>
+                        <legend>Home Address</legend>
+                        <label for="streetAddress">Street Address:</label>
+                        <input type="text" name="streetAddress" id="streetAddress" placeholder="e.g., 123 Main St" required>
+                        <label for="cityAddress">City:</label>
+                        <input type="text" name="cityAddress" id="cityAddress" placeholder="e.g., Baguio" required>
+                        <label for="regionAddress">Region:</label>
+                        <input type="text" name="regionAddress" id="regionAddress" placeholder="e.g., CAR" required>
+                        <label for="countryAddress">Country:</label>
+                        <input type="text" name="countryAddress" id="countryAddress" placeholder="e.g., Philippines" required>
+                  </fieldset>
+
+                  <input type="button" value="Submit">
+            </form>
+      </main>
+      <footer>
+            <p>&copy; 2024 Information Form</p>
+      </footer>
+</body>
+</html>
